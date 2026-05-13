@@ -1,8 +1,3 @@
-"""
-EDA — World Happiness Dataset 2015-2019
-Run with: python notebooks/01_eda.py
-Outputs are saved to outputs/
-"""
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
