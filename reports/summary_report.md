@@ -1,4 +1,4 @@
-# Summary Report — Workshop 003: ETL with Apache Kafka + ML
+# Summary Report — Workshop 003: ETL with Apache Kafka + ML  Juan Jose Alban
 
 ## 1. Dataset Description
 
@@ -105,11 +105,3 @@ freedom, generosity, corruption, actual_score, predicted_score, created_at
 
 The model generalizes well — the cross-validation R² (0.758) is close to the test R² (0.772), indicating no overfitting. An MAE of 0.42 on a happiness scale of ~2.9–7.8 is acceptable for real-world socioeconomic prediction.
 
----
-
-## 7. Challenges and Assumptions
-
-- **Inconsistent schemas**: Solved via a comprehensive column mapping dictionary in `preprocess.py`.
-- **No missing values**: All datasets were complete, so no imputation was needed. The code includes median imputation as a safeguard for future data.
-- **Kafka requires cloud service**: No local Java/Docker environment was available. Confluent Cloud free tier was used with SASL_SSL authentication.
-- **Assumption**: The happiness "score" columns across years use comparable scales (0–10), which is confirmed by the UN methodology.
