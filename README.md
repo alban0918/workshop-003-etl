@@ -1,4 +1,4 @@
-# Workshop 003 — ETL Process with Apache Kafka + Machine Learning
+# Workshop 003 — ETL Process with Apache Kafka + Machine Learning Juan Jose Alban
 
 **Course:** ETL — Data Engineering and Artificial Intelligence  
 **Dataset:** World Happiness Report (2015–2019)  
