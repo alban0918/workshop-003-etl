@@ -1,8 +1,3 @@
-"""
-Model Training — Regression on World Happiness Score
-Run with: python notebooks/02_model_training.py
-Outputs: models/happiness_model.pkl, outputs/model_metrics.txt, outputs/fig7_predictions.png
-"""
 import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
 
