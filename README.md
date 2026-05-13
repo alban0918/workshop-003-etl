@@ -105,10 +105,3 @@ Streams all rows from `outputs/test_data.csv` to Kafka one by one.
 | **Gradient Boosting** | **0.4168** | **0.5332** | **0.7723** | **0.7576** |
 
 Best model: **Gradient Boosting Regressor** (R² = 0.77)
-
-
-## Technologies
-
-- Python 3.x · pandas · scikit-learn · matplotlib · seaborn
-- Apache Kafka (via Confluent Cloud) · confluent-kafka
-- Supabase (PostgreSQL) · psycopg2
