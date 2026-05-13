@@ -106,17 +106,6 @@ Streams all rows from `outputs/test_data.csv` to Kafka one by one.
 
 Best model: **Gradient Boosting Regressor** (R² = 0.77)
 
----
-
-## Key Design Decisions
-
-- **Column normalization across years**: Each year used different column names (e.g., `Happiness.Score` in 2017, `Score` in 2018). A unified mapping in `preprocess.py` handles all variants.
-- **Feature selection**: 6 features were selected based on correlation with the happiness score: GDP per capita, Social support, Life expectancy, Freedom, Generosity, and Corruption.
-- **Gradient Boosting over Linear Regression**: GBR achieved R²=0.77 vs 0.73 for LR, with better MAE. The non-linear interactions between features (e.g., GDP × Social support) justify the ensemble approach.
-- **Kafka on Confluent Cloud**: No local Java/Docker required. SASL_SSL authentication via API key/secret.
-- **Batch inserts**: The consumer accumulates 10 records before writing to the DB, reducing round-trips to Supabase.
-
----
 
 ## Technologies
 
